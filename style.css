@@ -2,42 +2,13 @@
     margin: 0;
 }
 
-.mainDiv {
-    width: 100%;
-    display: flex;
-    box-sizing: border-box;
+.side-panel{
+    width: 12%;
+    height: 99vh;
 }
-
-.sidePanel {
-    background-color: #38384b;
-    width: 20%;
-    height: 100vh;
-}
-
-.sidePanel h1 {
-    color: white;
-}
-
-.dashboard {
-    width: 80%;
-}
-.dashboard .topbar{
-    height: 7vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 2px solid #1c1c26;
-}
-.topbar ul{
-    display: flex;
-}
-.topbar ul li{
-    margin-right: 2rem;
+.side-panel .side-tab{
     cursor: pointer;
-    list-style: none;
 }
-
 .grid-container {
     display: grid;
     gap: 50px;
@@ -48,7 +19,6 @@
 
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 60px;
     font-size: 30px;
     cursor: pointer;
