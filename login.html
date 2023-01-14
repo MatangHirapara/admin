@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="id01" class="m-auto p-5 border" style="width: 17%; margin-top: 15%!important;" action="/login"
+        method="post">
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+            <input type="email" id="form2Example1" class="form-control" required />
+            <label class="form-label" for="form2Example1">Email address</label>
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+            <input type="password" id="form2Example2" class="form-control" required />
+            <label class="form-label" for="form2Example2">Password</label>
+        </div>
+
+        <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+            <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                    <label class="form-check-label" for="form2Example31"> Remember me </label>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- Simple link -->
+                <a href="#!">Forgot password?</a>
+            </div>
+        </div>
+
+        <!-- Submit button -->
+        <button onclick="myFunction()" type="submit" class="btn btn-primary btn-block mb-4"><a id="next-call"
+                style="text-decoration: none; color: white; font-size: 1.3rem;">Sign in</a></button>
+
+        <!-- Register buttons -->
+        <div class="text-center">
+            <p>Not a member? <a href="#!">Register</a></p>
+            <p>or sign up with:</p>
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-google"></i>
+            </button>
+
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+            </button>
+
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-github"></i>
+            </button>
+        </div>
+    </form>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                function myFunction() {
+                    document.getElementById("next-call").href = "index.html";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
